@@ -8,7 +8,7 @@ import org.junit.Test;
 import es.upm.miw.spai.ecp2.Point;
 
 public class PointTest {
-    private Point pt;
+    private Point pt; 
 
     @Before
     public void before() {
