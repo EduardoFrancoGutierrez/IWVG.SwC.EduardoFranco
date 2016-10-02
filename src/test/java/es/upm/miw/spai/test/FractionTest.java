@@ -34,4 +34,18 @@ public class FractionTest {
           assertEquals(0.4, fracion.decimal(),0.1);
     }
 
+    @Test
+    public void testSubtract() {
+          int numerador=5;
+          int denominador=4;
+          Fraction fraction= new Fraction(numerador,denominador);
+          
+          numerador=2;
+          denominador=5;
+          Fraction fraction2= new Fraction(numerador,denominador);
+          fraction.subtract(fraction2);
+          
+          assertEquals(20, fraction.getDenominator());
+          assertEquals(17, fraction.getNumerator());
+    }
 }
