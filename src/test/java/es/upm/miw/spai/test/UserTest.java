@@ -7,7 +7,6 @@ import org.junit.Test;
 import es.upm.miw.spai.ecp2.User;
 
 public class UserTest {
-
     
     @Test
     public void testUser() {
@@ -41,4 +40,10 @@ public class UserTest {
         assertEquals("E.",user.initials());
     }
 
+    @Test
+    public void testGetNametoUpper() {
+        String name = "Eduardo";         
+        User user = new User(name);
+        assertEquals("EDUARDO",user.getNametoUpper());
+    }
 }
