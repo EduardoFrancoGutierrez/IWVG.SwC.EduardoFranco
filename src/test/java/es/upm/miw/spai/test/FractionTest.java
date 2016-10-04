@@ -48,4 +48,12 @@ public class FractionTest {
           assertEquals(20, fraction.getDenominator());
           assertEquals(17, fraction.getNumerator());
     }
+    
+    @Test
+    public void testMajor() {
+        Fraction f = new Fraction();
+        Fraction fraction1= new Fraction(2,4);
+        Fraction fraction2= new Fraction(10,2);
+        assertEquals(fraction2, f.Major(fraction1,fraction2));
+    }
 }
