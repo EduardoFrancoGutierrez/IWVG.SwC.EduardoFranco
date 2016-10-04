@@ -17,6 +17,9 @@ public class User {
         this.name = this.format(name);
         this.familyName = this.format(familyName);
     }
+    public User(String name){
+        this.name = name;
+    }
 
     public int getNumber() {
         return this.number;
@@ -36,5 +39,13 @@ public class User {
 
     public String initials() {
         return this.name.substring(0, 1) + ".";
+    }
+    
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getNametoUpper(){
+        return this.name.toUpperCase();
     }
 }
