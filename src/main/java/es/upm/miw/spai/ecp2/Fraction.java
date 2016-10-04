@@ -65,4 +65,10 @@ public class Fraction {
         this.denominator = this.denominator * fraction.denominator;
     }
     
+    public Fraction Major(Fraction f1, Fraction f2){
+       if(f1.numerator/f1.denominator  > f2.numerator/f2.denominator)
+           return f1;
+       else 
+           return f2;           
+    }
 }
