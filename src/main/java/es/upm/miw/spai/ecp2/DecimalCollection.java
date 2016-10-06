@@ -6,6 +6,7 @@ import java.util.List;
 public class DecimalCollection {
     private List<Double> collection;
 
+    
     public DecimalCollection() {
         this.collection = new ArrayList<Double>();
     } 
