@@ -71,4 +71,9 @@ public class Fraction {
        else 
            return f2;           
     }
+    
+    public void sumar(Fraction fraction){
+        this.numerator = this.numerator * fraction.denominator + fraction.numerator * this.denominator;
+        this.denominator = this.denominator * fraction.denominator;
+    }
 }

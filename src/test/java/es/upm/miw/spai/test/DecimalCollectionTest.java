@@ -40,4 +40,15 @@ public class DecimalCollectionTest {
     public void testHigher() {
         assertEquals(3, this.dc.higher(), 10e-5);
 }
+    @Test
+    public void testMenor() {
+        assertEquals(-1, this.dc.menor(), 10e-5);
+    }
+    
+    @Test
+    public void testMultiplication(){
+        assertEquals(-12, this.dc.multiplication(), 10e-5);
+    }
+    
+    
 }

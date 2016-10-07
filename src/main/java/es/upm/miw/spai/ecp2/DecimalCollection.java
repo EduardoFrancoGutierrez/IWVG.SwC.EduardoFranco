@@ -35,5 +35,22 @@ public class DecimalCollection {
         }
         return higher;
     }
+    
+    public double menor() {
+        double menor = this.collection.get(0);
+        for (double value : this.collection) {
+            if (value < menor)
+                menor = value;
+        }
+        return menor;
+    }
+    
+    public double multiplication() {
+        double multiplication = 1;
+        for (double item : this.collection) {
+        	multiplication *= item;
+        }
+        return multiplication;
+    }
 
 }
