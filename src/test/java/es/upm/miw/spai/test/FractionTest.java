@@ -56,4 +56,17 @@ public class FractionTest {
         Fraction fraction2= new Fraction(10,2);
         assertEquals(fraction2, f.Major(fraction1,fraction2));
     }
+    
+    @Test
+    public void testSumar() {
+          int numerador=5;
+          int denominador=4;
+          Fraction fraction= new Fraction(numerador,denominador);
+          numerador=1;
+          denominador=3;
+          Fraction f= new Fraction(numerador,denominador);
+          fraction.sumar(f);
+          assertEquals(12, fraction.getDenominator());
+          assertEquals(19, fraction.getNumerator());
+    }
 }
